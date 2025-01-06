@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomscore - Bloom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    .header {
+      background-color: #6ac47e;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 1.5em;
+    }
+    .container {
+      padding: 2em;
+      text-align: center;
+    }
+    .bloomscore-card {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .bloomscore {
+      font-size: 3em;
+      color: #6ac47e;
+      margin: 0.5em 0;
+    }
+    .score-description {
+      font-size: 1.2em;
+      color: #666;
+    }
+    .ripple-effects {
+      margin-top: 2em;
+    }
+    .ripple-title {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    .ripple-item {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 1em;
+      border-radius: 6px;
+      margin-bottom: 1em;
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      background: white;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1em 0;
+    }
+    .nav-bar a {
+      text-decoration: none;
+      color: #6ac47e;
+      font-size: 1.2em;
+    }
+    .nav-bar a:hover {
+      color: #3b9e58;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Bloomscore</div>
+
+  <div class="container">
+    <div class="bloomscore-card">
+      <h2>Your Bloomscore</h2>
+      <div class="bloomscore">87</div>
+      <p class="score-description">You've made a meaningful impact by sharing inspiration, creating connections, and nurturing positivity!</p>
+    </div>
+
+    <div class="ripple-effects">
+      <h3 class="ripple-title">Ripple Effects 🌊</h3>
+      <div class="ripple-item">
+        <strong>🌱 Planted a seed:</strong> Inspired 5 people to start a gratitude journal.
+      </div>
+      <div class="ripple-item">
+        <strong>💬 Started a conversation:</strong> Engaged with 3 community members on mindful living.
+      </div>
+      <div class="ripple-item">
+        <strong>⚡ Sparked an idea:</strong> Helped 2 users complete their creative projects.
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <a href="feed.html">🌸 Feed</a>
+    <a href="bloomscore.html">🎖 Bloomscore</a>
+    <a href="journeys.html">🌱 Journeys</a>
+    <a href="orbits.html">💫 Orbits</a>
+  </div>
+</body>
+</html>

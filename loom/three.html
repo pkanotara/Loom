@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripple Effects - Bloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="one.html">Home</a></li>
+                <li><a href="two.html">Bloomscore</a></li>
+                <li><a href="three.html" class="active">Ripple Effects</a></li>
+                <li><a href="journeys.html">Journeys</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="ripple-intro">
+            <h1>Your Ripple Effects</h1>
+            <p>Explore the positive impact you've created in the Bloom community. Every connection, challenge, and achievement adds to your ripple, making waves of change that inspire others.</p>
+        </section>
+
+        <section class="ripple-visual">
+            <h2>Interactive Ripple Map</h2>
+            <p>Hover over or click on a ripple to learn more about your contributions and their impact on others.</p>
+            <div class="ripple-map">
+                <canvas id="rippleCanvas" width="800" height="600"></canvas>
+            </div>
+        </section>
+
+        <section class="impact-details">
+            <h2>Impact Timeline</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>January 2025</h3>
+                    <p>Connected with 5 new users through shared goals in "Mindful Living."</p>
+                </li>
+                <li>
+                    <h3>February 2025</h3>
+                    <p>Collaborated on a project to plant 50 trees in your local community.</p>
+                </li>
+                <li>
+                    <h3>March 2025</h3>
+                    <p>Inspired 10 users to start their own growth journeys based on your shared content.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contribute">
+            <h2>Continue to Grow Your Ripple</h2>
+            <p>Looking for ways to increase your impact? Explore new challenges, connect with like-minded users, or share your latest journey with the community.</p>
+            <a href="journeys.html" class="cta-button">Start a New Journey</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bloom. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const canvas = document.getElementById('rippleCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function drawRipple() {
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+
+            for (let i = 1; i <= 5; i++) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, i * 60, 0, 2 * Math.PI);
+                ctx.strokeStyle = `rgba(0, 153, 204, ${1 - i * 0.2})`;
+                ctx.lineWidth = 3;
+                ctx.stroke();
+            }
+        }
+
+        drawRipple();
+    </script>
+</body>
+</html>
